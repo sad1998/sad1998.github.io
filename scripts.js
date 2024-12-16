@@ -8,11 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
             // Sort repositories by creation date (newest first)
             repos.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
 
-            // Limit to the first 10 repositories
-            const limitedRepos = repos.slice(0, 10);
-
             // Create repository elements
-            limitedRepos.forEach(repo => {
+            repos.forEach(repo => {
                 const repoItem = document.createElement('div');
                 repoItem.classList.add('repo-item');
 
