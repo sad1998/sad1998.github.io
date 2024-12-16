@@ -23,4 +23,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 repoItem.appendChild(repoName);
                 repoItem.appendChild(repoDescription);
-            
+                repoList.appendChild(repoItem);
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching repositories:', error);
+            const errorMessage = document.createElement('p');
+            errorMessage.textContent = 'Unable to load repositories at this time.';
+            repoList.appendChild(errorMessage);
+        });
+});
