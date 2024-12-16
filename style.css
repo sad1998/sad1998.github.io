@@ -1,120 +1,77 @@
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
-    color: #333;
-    line-height: 1.6;
+    list-style: none;
 }
 
-header {
-    background: #4CAF50;
+/* Apply a global font style */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header styling */
+.header {
+    background-color: #4CAF50;
     color: white;
-    padding: 10px 0;
+    padding: 20px 10px;
     text-align: center;
 }
 
-.navbar {
+.header .nav ul {
     display: flex;
     justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background: #333;
+    margin-top: 10px;
 }
 
-.navbar li {
-    margin: 0;
+.header .nav ul li {
+    margin: 0 15px;
 }
 
-.navbar a {
-    display: block;
-    padding: 10px 20px;
+.header .nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.navbar a:hover {
-    background: #4CAF50;
-    transition: 0.3s ease;
+.header .nav ul li a:hover {
+    background-color: #3e8e41;
 }
 
-/* Section Styles */
+/* Section styling */
 .section {
-    padding: 40px 20px;
-    text-align: center;
-    background: #f9f9f9;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.section:nth-child(odd) {
-    background: #fff;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-h1, h2 {
+/* Project cards */
+.project {
     margin-bottom: 20px;
-    color: #333;
-}
-
-/* Project Cards */
-.project-card {
-    background: white;
+    padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 600px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    background-color: #f1f1f1;
 }
 
-.project-card h3 {
-    color: #4CAF50;
-    margin-top: 0;
-}
-
-.project-card p {
-    margin-bottom: 10px;
-}
-
-.project-card a {
-    color: #4CAF50;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.project-card a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    background: #333;
+/* Footer styling */
+.footer {
+    background-color: #333;
     color: white;
-    padding: 10px 0;
     text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
 }
 
-/* Contact Section */
-#contact ul {
-    list-style: none;
-    padding: 0;
-}
-
-#contact li {
-    margin: 10px 0;
-}
-
-#contact a {
-    color: #4CAF50;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#contact a:hover {
-    text-decoration: underline;
+.footer p {
+    margin: 0;
+    font-size: 14px;
 }
