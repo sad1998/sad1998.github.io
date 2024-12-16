@@ -3,85 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saptak Sadhya's Machine Learning Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Saptak Sadhya's GitHub Projects</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="navbar">
-                <li><a href="#home">Home</a></li>
+    <header class="header">
+        <h1>Welcome to My GitHub Projects</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About Me</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home" class="section">
-        <div class="container">
-            <h1>Welcome to My Machine Learning Portfolio</h1>
-            <p>Hi, I'm Saptak Sadhya, a Data Scientist passionate about Machine Learning and Deep Learning.</p>
-        </div>
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>I'm Saptak Sadhya, a Data Scientist passionate about Machine Learning and Deep Learning. I currently work at Clairvoyant as a Data Analyst and studied at Jadavpur University. I'm continuously learning advanced deep learning techniques and enjoy implementing ML algorithms from scratch to understand their inner workings.</p>
     </section>
 
     <section id="projects" class="section">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-card">
-                <h3>Deep Learning Projects</h3>
-                <p>Projects related to Deep Learning Algorithms.</p>
-                <a href="https://github.com/sad1998/Deep-Learning-Projects" target="_blank">View on GitHub</a>
-            </div>
-            <div class="project-card">
-                <h3>ML from Scratch</h3>
-                <p>Implementing Machine Learning Algorithms without using Python ML Libraries.</p>
-                <a href="https://github.com/sad1998/ML-from-scratch" target="_blank">View on GitHub</a>
-            </div>
-            <div class="project-card">
-                <h3>Unsupervised Learning</h3>
-                <p>Projects focusing on Unsupervised Learning techniques.</p>
-                <a href="https://github.com/sad1998/Unsupervised-Learning" target="_blank">View on GitHub</a>
-            </div>
-            <div class="project-card">
-                <h3>Movie Recommender System App</h3>
-                <p>A movie recommendation system built as an application.</p>
-                <a href="https://github.com/sad1998/movie-recommender-system-app" target="_blank">View on GitHub</a>
-            </div>
-            <div class="project-card">
-                <h3>Data Analysis Projects</h3>
-                <p>Analyzing and extracting meaningful insights from data using Python libraries.</p>
-                <a href="https://github.com/sad1998/Data-Analysis-Projects" target="_blank">View on GitHub</a>
-            </div>
-            <div class="project-card">
-                <h3>Object Detection</h3>
-                <p>Projects related to object detection using various algorithms.</p>
-                <a href="https://github.com/sad1998/Object_Detection" target="_blank">View on GitHub</a>
-            </div>
+        <h2>My GitHub Repositories</h2>
+        <div id="repo-list" class="repo-list">
+            <!-- Repositories will be injected here -->
         </div>
     </section>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I have a background in Data Science with experience in machine learning, deep learning, and data analysis. I studied at Jadavpur University and am currently associated with Scaler. I am passionate about leveraging AI to solve real-world problems.</p>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Feel free to reach out to me on LinkedIn or check out my GitHub for more projects!</p>
-            <ul>
-                <li>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/saptak-sadhya" target="_blank">My LinkedIn</a></li>
-                <li>GitHub: <a href="https://github.com/sad1998" target="_blank">My GitHub</a></li>
-            </ul>
-        </div>
-    </section>
-
-    <footer>
+    <footer class="footer">
         <p>&copy; 2024 Saptak Sadhya. All rights reserved.</p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
