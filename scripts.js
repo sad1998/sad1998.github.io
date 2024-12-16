@@ -5,10 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch('https://api.github.com/users/sad1998/repos')
         .then(response => response.json())
         .then(repos => {
-            // Sort repositories by creation date (newest first)
             repos.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
 
-            // Create repository elements
             repos.forEach(repo => {
                 const repoItem = document.createElement('div');
                 repoItem.classList.add('repo-item');
@@ -25,13 +23,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 repoItem.appendChild(repoName);
                 repoItem.appendChild(repoDescription);
-                repoList.appendChild(repoItem);
-            });
-        })
-        .catch(error => {
-            console.error('Error fetching repositories:', error);
-            const errorMessage = document.createElement('p');
-            errorMessage.textContent = 'Unable to load repositories at this time.';
-            repoList.appendChild(errorMessage);
-        });
-});
+            
